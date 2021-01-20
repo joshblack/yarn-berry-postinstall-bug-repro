@@ -1,0 +1,16 @@
+{
+  "name": "package-a",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "cli"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "dependencies": {
+    "cli": "0.0.0"
+  },
+  "devDependencies": {
+    "react": ">=16"
+  }
+}
