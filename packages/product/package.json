@@ -1,0 +1,9 @@
+{
+  "name": "product",
+  "version": "0.0.0",
+  "dependencies": {
+    "library": "0.0.0",
+    "library-with-peer": "0.0.0",
+    "react": ">=16"
+  }
+}

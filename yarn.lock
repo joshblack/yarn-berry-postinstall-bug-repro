@@ -20,6 +20,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"library-with-peer@0.0.0, library-with-peer@workspace:packages/library-with-peer":
+  version: 0.0.0-use.local
+  resolution: "library-with-peer@workspace:packages/library-with-peer"
+  dependencies:
+    cli: 0.0.0
+    react: ">=16"
+  peerDependencies:
+    react: ">=16"
+  languageName: unknown
+  linkType: soft
+
+"library@0.0.0, library@workspace:packages/library":
+  version: 0.0.0-use.local
+  resolution: "library@workspace:packages/library"
+  dependencies:
+    cli: 0.0.0
+  languageName: unknown
+  linkType: soft
+
 "loose-envify@npm:^1.1.0":
   version: 1.4.0
   resolution: "loose-envify@npm:1.4.0"
@@ -38,22 +57,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-a@0.0.0, package-a@workspace:packages/package-a":
+"product@workspace:packages/product":
   version: 0.0.0-use.local
-  resolution: "package-a@workspace:packages/package-a"
+  resolution: "product@workspace:packages/product"
   dependencies:
-    cli: 0.0.0
-    react: ">=16"
-  peerDependencies:
-    react: ">=16"
-  languageName: unknown
-  linkType: soft
-
-"package-b@workspace:packages/package-b":
-  version: 0.0.0-use.local
-  resolution: "package-b@workspace:packages/package-b"
-  dependencies:
-    package-a: 0.0.0
+    library: 0.0.0
+    library-with-peer: 0.0.0
     react: ">=16"
   languageName: unknown
   linkType: soft
